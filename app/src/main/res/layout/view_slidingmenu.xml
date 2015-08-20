@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f2f31"
+    android:orientation="vertical">
+
+    <include layout="@layout/behind_title" />
+
+    <ListView
+        android:id="@+id/lv_slidingmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="@dimen/list_margin_height"
+        android:layout_marginTop="@dimen/title_height"
+        android:listSelector="#0fff"
+        android:divider="@null"
+        android:cacheColorHint="#0000" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_button_height"
+        android:layout_gravity="bottom"
+        android:background="#2f2f31"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <com.sdbnet.hywy.enterprise.ui.widget.CustomButton
+            android:id="@+id/cb_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            Image="@drawable/button_setting"
+            ImageID="@+id/imageview_feedback_button"
+            Text="@string/button_setting"
+            TextID="@+id/textview_feedback_button"
+            android:background="@drawable/back_behind_listitem_style"
+            android:clickable="true" >
+        </com.sdbnet.hywy.enterprise.ui.widget.CustomButton>
+
+        <include layout="@layout/merge_verticalside" />
+        
+        <com.sdbnet.hywy.enterprise.ui.widget.CustomButton
+            android:id="@+id/cb_about"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            Image="@drawable/button_about"
+            ImageID="@+id/imageview_about_button"
+            Text="@string/button_about"
+            TextID="@+id/textview_about_button"
+            android:background="@drawable/back_button_default_style"
+            android:clickable="true" />
+    </LinearLayout>
+
+</FrameLayout>

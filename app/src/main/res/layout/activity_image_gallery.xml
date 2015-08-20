@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/nav" >
+
+        <ImageView
+            android:id="@+id/about_imageview_gohome"
+            style="@style/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/button_details_gohome" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="附件浏览"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </FrameLayout>
+ -->
+ <include layout="@layout/common_view_title"/>
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#221e1e"
+        android:gravity="center_vertical" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_img_show"
+        android:layout_marginTop="@dimen/title_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/gallery" >
+    </android.support.v4.view.ViewPager>
+
+    <include layout="@layout/view_progress_loading" />
+    <include layout="@layout/common_record_null" />
+</RelativeLayout>

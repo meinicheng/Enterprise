@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="blue2">#0087fc</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="grey">#bab7b7</color>
+    <color name="grey2">#cccccc</color>
+    <color name="grey3">#919191</color>
+    <color name="dark_grey">#DBDBDB</color>
+    <color name="normal">#747e85</color>
+    <color name="skyblue">#4f849e</color>
+    <color name="transparent">#0000</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="trace2">#F0FFFF</color>
+    <color name="trace1">#EEEEE0</color>
+    
+    <color name="backColor">#2000</color>
+    <color name="detail_bgColor">#f5f5f5</color>
+    
+    <color name="defaultTextColor">#666</color>
+    
+    <!-- start zxing -->
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <!-- end zxing -->
+    
+	<color name="default_bg">#ffffffff</color>
+    <color name="item_default">#ffe5e5e5</color>
+    <color name="item_down">#ffcccccc</color>
+    <color name="address_item_down">#ffcecece</color>
+    <color name="plate_color">#ffff9900</color>
+    
+    
+    <color name="nav_default">#2f2f31</color>
+    <color name="nav_pressed">#232325</color>
+    
+    <color name="txt_pressed">#bab7b7</color>
+    <color name="txt_default">#a5a5a5</color>
+
+    <color name="popup_backdrop_click">#303132</color>
+    <color name="popup_backdrop_off">#47484B</color>
+
+    <color name="umeng_fb_color_btn_pressed">#1495F7</color>
+    <color name="umeng_fb_color_btn_normal">#333333</color>
+    <color name="tb_munion_item_force">#e3e3e3</color>
+</resources>

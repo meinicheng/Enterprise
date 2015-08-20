@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="35dip"
+    android:background="@drawable/textbox"
+    android:gravity="center_vertical" >
+
+    <Spinner
+        android:id="@+id/sp_order_statu"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@null" />
+
+    <ImageView
+        android:id="@+id/iv_drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/sp_order_statu"
+        android:src="@drawable/drop_down_arrow" />
+
+</RelativeLayout>

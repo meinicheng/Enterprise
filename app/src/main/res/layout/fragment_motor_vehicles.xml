@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.sdbnet.hywy.enterprise.ui.widget.RTPullListView
+        android:id="@+id/fragment_motor_vehicles_lv_groups"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="#efefef"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:listSelector="#0fff"
+        android:scrollbars="none" />
+
+    <include layout="@layout/common_record_null" />
+
+</LinearLayout>

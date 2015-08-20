@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_view_title" />
+
+    <!--
+         <LinearLayout
+        android:id="@+id/ativity_order_statistic_list_pb"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ProgressBar
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    -->
+
+    <com.sdbnet.hywy.enterprise.ui.widget.PullToRefreshLayout
+        android:id="@+id/fragment_order_list_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/pull_refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+        <!-- android:background="#cccccc" -->
+
+        <com.sdbnet.hywy.enterprise.ui.widget.PullableExpandableListView
+            android:id="@+id/fragment_order_list_expand_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#0000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="#0fff"
+            android:paddingBottom="8dp"
+            android:scrollbars="none" />
+
+        <include layout="@layout/pull_refresh_load_more" />
+
+        <include layout="@layout/common_progress_loading" />
+
+        <include layout="@layout/common_record_null" />
+    </com.sdbnet.hywy.enterprise.ui.widget.PullToRefreshLayout>
+
+</LinearLayout>

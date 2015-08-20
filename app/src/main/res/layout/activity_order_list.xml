@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<!--     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+         android:background="@drawable/nav">
+
+        <LinearLayout
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/activity_order_list_iv_go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/button_details_gohome" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_order_list_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="历史订单"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/activity_order_list_tv_title"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/activity_order_list_ll_query_btn"
+                android:layout_width="@dimen/popmenu_width"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/activity_order_list_tv_order_statu"
+                    android:layout_width="@dimen/popmenu_width"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout> -->
+	<include layout="@layout/common_view_title"/>
+	
+    <include layout="@layout/view_progress_loading" />
+
+    <com.sdbnet.hywy.enterprise.ui.widget.RTPullListView
+        android:id="@+id/activity_order_list_plv_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:listSelector="#0fff"
+        android:scrollbars="none" />
+
+    <include layout="@layout/common_record_null" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_bar_code_scan_capture_containter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/activity_bar_code_scan_capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+  <include layout="@layout/common_view_title"
+      android:id="@+id/activity_bar_code_scan_fl_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/activity_bar_code_scan_lay_input_bar_code"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_below="@id/activity_bar_code_scan_fl_title_bar"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_line"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/activity_bar_code_scan_et_bar_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/bg_edittext"
+            android:hint=" 可手动输入条形码"
+            android:paddingLeft="3dp"
+            android:textColorHint="@color/blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_bar_code_scan_capture_crop_layout"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:layout_below="@id/activity_bar_code_scan_lay_input_bar_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:background="@drawable/scan_capture"
+        android:contentDescription="@string/app_name" >
+
+        <ImageView
+            android:id="@+id/activity_bar_code_scan_capture_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/scan_line"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_bar_code_scan_tv_scan_order_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/activity_bar_code_scan_capture_crop_layout"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/activity_bar_code_scan_bt_query"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/activity_bar_code_scan_tv_scan_order_number"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_btn_selector"
+        android:onClick="lookForScanOrder"
+        android:text="@string/query"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>
